@@ -82,4 +82,9 @@ for(var i = 0; i < enemyNames.length; i++) {
         // pass the pickedEnemyName variable's value into the fight function, where it will assume the value of the enemyName parameter
         fight(pickedEnemyName);
     }
+    //if the player isn't alive
+    else {
+       window.alert ("You have lost your robot in battle! Game over!");
+       break; 
+    }
 }

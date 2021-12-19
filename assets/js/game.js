@@ -117,7 +117,7 @@ var endGame = function() {
    
     //if player is still alive, player wins
     if(playerInfo.health > 0) {
-        window.alert("Great job, you've survived the game! You now have a score of " + playerMoney + ".");  
+        window.alert("Great job, you've survived the game! You now have a score of " + playerInfo.money + ".");  
     } else {
        window.alert("You've lost your robot in battle."); 
 }
@@ -205,7 +205,7 @@ var enemyInfo = [
    },
    {
        name: "Amy Android",
-       Attack: randomNumber(10, 14)
+       attack: randomNumber(10, 14)
    },
    {
        name: "Robo Trumble",
